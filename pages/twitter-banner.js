@@ -3,7 +3,6 @@ import styles from "../styles/Banner.module.css";
 import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import useDarkMode from "../hooks/useDarkMode";
-import { NextSeo } from "next-seo";
 
 export default function Twitter({ image }) {
   const router = useRouter();
@@ -26,16 +25,6 @@ export default function Twitter({ image }) {
 
   return (
     <div>
-      <NextSeo
-        title="Twitter Banner Generator"
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/twitter-logo.png",
-          },
-        ]}
-      />
-
       <header className={styles.header}>
         <svg
           onClick={() => router.push("/")}

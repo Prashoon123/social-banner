@@ -2,7 +2,6 @@ import { useRouter } from "next/dist/client/router";
 import styles from "../styles/Banner.module.css";
 import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
-import { NextSeo } from "next-seo";
 
 export default function Linkedin({ image }) {
   const router = useRouter();
@@ -22,16 +21,6 @@ export default function Linkedin({ image }) {
 
   return (
     <div>
-      <NextSeo
-        title="LinkedIn Banner Generator"
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/linkedin-logo.png",
-          },
-        ]}
-      />
-
       <header className={styles.header}>
         <svg
           onClick={() => router.push("/")}

@@ -2,7 +2,6 @@ import { useRouter } from "next/dist/client/router";
 import styles from "../styles/Banner.module.css";
 import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
-import { NextSeo } from "next-seo";
 
 export default function Facebook({ image }) {
   const router = useRouter();
@@ -24,16 +23,6 @@ export default function Facebook({ image }) {
 
   return (
     <div>
-      <NextSeo
-        title="Facebook Banner Generator"
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/facebook-logo.webp",
-          },
-        ]}
-      />
-
       <header className={styles.header}>
         <svg
           onClick={() => router.push("/")}
