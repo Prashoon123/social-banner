@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 
 export default function Linkedin({ image }) {
   const router = useRouter();
-  const imgUrl = image.urls.raw;
+  const imgUrl = image?.urls?.raw || image;
 
   const regenerate = () => {
     window.location.reload();

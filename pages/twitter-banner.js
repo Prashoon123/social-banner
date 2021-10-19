@@ -8,7 +8,7 @@ import { NextSeo } from "next-seo";
 export default function Twitter({ image }) {
   const router = useRouter();
   const [colorTheme, setTheme] = useDarkMode();
-  const imgUrl = image.urls.raw;
+  const imgUrl = image?.urls?.raw || image;
 
   const regenerate = () => {
     window.location.reload();
@@ -85,13 +85,14 @@ export default function Twitter({ image }) {
 }
 
 export async function getServerSideProps(context) {
-  // const image = await fetch(
-  //   `https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&collections=s8lmTtbkQm4`
-  // ).then((res) => res.json());
+  const image = await fetch(
+    `https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&collections=s8lmTtbkQm4`
+  ).then((res) => res.json());
 
   return {
     props: {
       image:
+        image ||
         "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format",
     },
   };
