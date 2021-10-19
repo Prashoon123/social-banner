@@ -85,7 +85,7 @@ export default function Home() {
 
         <p>
           Made with 💖 by{" "}
-          <a href="https://prashoonb.tech/" target="_blank">
+          <a href="https://prashoonb.tech/" target="_blank" rel="noreferrer">
             Prashoon Bhattacharjee
           </a>
         </p>
@@ -94,6 +94,7 @@ export default function Home() {
           <a
             href="https://www.producthunt.com/posts/password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316100&theme=light"
@@ -107,6 +108,7 @@ export default function Home() {
           <a
             href="https://www.producthunt.com/posts/password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316100&theme=dark"
