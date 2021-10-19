@@ -4,7 +4,7 @@ import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import { NextSeo } from "next-seo";
 
-function linkedinBanner({ image }) {
+function LinkedinBanner({ image }) {
   const router = useRouter();
   const imgUrl = image.urls.raw;
 
@@ -82,7 +82,7 @@ function linkedinBanner({ image }) {
   );
 }
 
-export default linkedinBanner;
+export default LinkedinBanner;
 
 export async function getServerSideProps(context) {
   const image = await fetch(

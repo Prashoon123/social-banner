@@ -5,7 +5,7 @@ import FileSaver from "file-saver";
 import useDarkMode from "../hooks/useDarkMode";
 import { NextSeo } from "next-seo";
 
-function twitterBanner({ image }) {
+function TwitterBanner({ image }) {
   const router = useRouter();
   const [colorTheme, setTheme] = useDarkMode();
   const imgUrl = image.urls.raw;
@@ -84,7 +84,7 @@ function twitterBanner({ image }) {
   );
 }
 
-export default twitterBanner;
+export default TwitterBanner;
 
 export async function getServerSideProps(context) {
   const image = await fetch(

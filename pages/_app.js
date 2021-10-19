@@ -10,10 +10,10 @@ function MyApp({ Component, pageProps }) {
         title="Social Banner"
         description="Generate headers/cover/background for your social media accounts
         using this website!"
-        canonical="https://www.chatcube.me/"
+        canonical="https://social-banner.live/"
         openGraph={{
           type: "website",
-          url: "https://www.chatcube.me/",
+          url: "https://social-banner.live/",
           title: "Social Banner",
           description:
             "Generate headers/cover/background for your social media accounts using this website!",
