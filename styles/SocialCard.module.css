@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 360px;
+  cursor: pointer;
+  margin: 10px;
+  /* overflow: scroll; */
+}
+
+.container > img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.container2 > p {
+  margin-top: 2px;
+}
