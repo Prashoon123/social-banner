@@ -3,9 +3,19 @@ import styles from "../styles/Home.module.css";
 import useDarkMode from "../hooks/useDarkMode";
 import { LightBulbIcon, MoonIcon } from "@heroicons/react/outline";
 import { Follow } from "react-twitter-widgets";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const [colorTheme, setTheme] = useDarkMode();
+
+  <NextSeo
+    additionalLinkTags={[
+      {
+        rel: "icon",
+        href: "/internet.png",
+      },
+    ]}
+  />;
 
   return (
     <div className={styles.container}>

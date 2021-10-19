@@ -4,7 +4,7 @@ import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import { NextSeo } from "next-seo";
 
-function FacebookBanner({ image }) {
+function Facebook({ image }) {
   const router = useRouter();
   const imgUrl = image.urls.raw;
 
@@ -85,7 +85,7 @@ function FacebookBanner({ image }) {
   );
 }
 
-export default FacebookBanner;
+export default Facebook;
 
 export async function getServerSideProps(context) {
   const image = await fetch(
