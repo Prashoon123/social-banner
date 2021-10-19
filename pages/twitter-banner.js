@@ -85,9 +85,9 @@ export default function Twitter({ image }) {
 }
 
 export async function getServerSideProps(context) {
-  const image = await fetch(
-    `https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&collections=s8lmTtbkQm4`
-  ).then((res) => res.json());
+  // const image = await fetch(
+  //   `https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&collections=s8lmTtbkQm4`
+  // ).then((res) => res.json());
 
   return {
     props: {
