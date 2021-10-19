@@ -4,7 +4,7 @@ import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
 import { NextSeo } from "next-seo";
 
-function Linkedin({ image }) {
+export default function Linkedin({ image }) {
   const router = useRouter();
   const imgUrl = image.urls.raw;
 
@@ -81,8 +81,6 @@ function Linkedin({ image }) {
     </div>
   );
 }
-
-export default Linkedin;
 
 export async function getServerSideProps(context) {
   const image = await fetch(
