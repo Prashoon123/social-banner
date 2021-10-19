@@ -45,7 +45,7 @@ export default function Home() {
 
         <a href="" target="_blank">
           <img
-            src="https://img.shields.io/github/stars/Prashoon123/base64-encoder-decoder?style=social"
+            src="https://img.shields.io/github/stars/Prashoon123/social-banner?style=social"
             alt="githubStars"
           />
         </a>
