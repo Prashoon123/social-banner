@@ -12,6 +12,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Social Banner</title>
+        <link rel="icon" href="/internet.png" />
         <meta
           name="description"
           content="Generate headers/cover/background for your social media accounts using this website!"
@@ -119,7 +120,7 @@ export default function Home() {
           </a>
         </p>
 
-        {colorTheme === "dark" ? (
+        {/* {colorTheme === "dark" ? (
           <a
             href="https://www.producthunt.com/posts/password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447"
             target="_blank"
@@ -147,7 +148,7 @@ export default function Home() {
               height="54"
             />
           </a>
-        )}
+        )} */}
       </footer>
     </div>
   );
