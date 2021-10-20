@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
-  if (typeof window === "undefined") return "";
+  // if (typeof window === "undefined") return "";
 
   return (
     <>
