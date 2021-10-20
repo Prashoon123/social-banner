@@ -5,7 +5,6 @@ import FileSaver from "file-saver";
 import { useState } from "react";
 import { FadingCircle } from "better-react-spinkit";
 import useDarkMode from "../hooks/useDarkMode";
-import { NextSeo } from "next-seo";
 
 export default function Facebook({ image }) {
   const router = useRouter();
@@ -28,46 +27,12 @@ export default function Facebook({ image }) {
     htmlToImage.toBlob(node).then((blob) => {
       FileSaver.saveAs(blob, "facebook-banner.png");
 
-      setLoading(false)
+      setLoading(false);
     });
   };
 
   return (
     <div>
-      <NextSeo
-        title="Social Banner"
-        description="Generate headers/cover/background for your social media accounts
-        using this website!"
-        canonical="https://www.social-banner.live/"
-        openGraph={{
-          type: "website",
-          url: "https://www.social-banner.live/",
-          title: "Social Banner",
-          description:
-            "Generate headers/cover/background for your social media accounts using this website!",
-          images: [
-            {
-              url: "/social-media.png",
-              width: 512,
-              height: 512,
-              alt: "Social Banner",
-            },
-          ],
-          site_name: "Social Banner",
-        }}
-        twitter={{
-          handle: "@prashoonb",
-          site: "@prashoonb",
-          cardType: "summary_large_image",
-        }}
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/internet.png",
-          },
-        ]}
-      />
-
       <header className={styles.header}>
         <svg
           onClick={() => router.push("/")}
