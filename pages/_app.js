@@ -7,37 +7,28 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextSeo
-        title="Social Banner"
-        description="Generate headers/cover/background for your social media accounts
-        using this website!"
-        canonical="https://www.social-banner.live/"
+        title="ChatCube"
+        description="This is a 1:1 chatting app."
+        canonical="https://www.chatcube.me/"
         openGraph={{
-          type: "website",
-          url: "https://www.social-banner.live/",
-          title: "Social Banner",
-          description:
-            "Generate headers/cover/background for your social media accounts using this website!",
+          url: "https://www.chatcube.me/",
+          title: "ChatCube",
+          description: "This is a 1:1 chatting app.",
           images: [
             {
-              url: "/social-media.png",
-              width: 512,
-              height: 512,
-              alt: "Social Banner",
+              url: "/Logo.png",
+              width: 500,
+              height: 500,
+              alt: "ChatCube",
             },
           ],
-          site_name: "Social Banner",
+          site_name: "ChatCube",
         }}
         twitter={{
-          handle: "@prashoonb",
-          site: "@prashoonb",
+          handle: "@avneesh0612",
+          site: "@avneesh0612",
           cardType: "summary_large_image",
         }}
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/internet.png",
-          },
-        ]}
       />
       <Component {...pageProps} />
     </>
