@@ -3,46 +3,14 @@ import styles from "../styles/Home.module.css";
 import useDarkMode from "../hooks/useDarkMode";
 import { LightBulbIcon, MoonIcon } from "@heroicons/react/outline";
 import { Follow } from "react-twitter-widgets";
-import { NextSeo } from "next-seo";
+  
 
 export default function Home() {
   const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <div className={styles.container}>
-      <NextSeo
-        title="Social Banner"
-        description="Generate headers/cover/background for your social media accounts
-        using this website!"
-        canonical="https://www.social-banner.live/"
-        openGraph={{
-          type: "website",
-          url: "https://www.social-banner.live/",
-          title: "Social Banner",
-          description:
-            "Generate headers/cover/background for your social media accounts using this website!",
-          images: [
-            {
-              url: "/social-media.png",
-              width: 512,
-              height: 512,
-              alt: "Social Banner",
-            },
-          ],
-          site_name: "Social Banner",
-        }}
-        twitter={{
-          handle: "@prashoonb",
-          site: "@prashoonb",
-          cardType: "summary_large_image",
-        }}
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/internet.png",
-          },
-        ]}
-      />
+     
 
       <header className={styles.header}>
         <div className={styles.toggler}>
