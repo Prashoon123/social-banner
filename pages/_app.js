@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { NextSeo } from "next-seo";
-import Head from "nex/head";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   // if (typeof window === "undefined") return "";
