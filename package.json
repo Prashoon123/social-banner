@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "better-react-spinkit": "^2.0.4",
     "file-saver": "^2.0.5",
     "html-to-image": "^1.9.0",
+    "lodash": "^4.17.21",
     "next": "11.1.2",
     "next-seo": "^4.28.1",
     "react": "17.0.2",

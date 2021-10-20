@@ -2,9 +2,15 @@ import { useRouter } from "next/dist/client/router";
 import styles from "../styles/Banner.module.css";
 import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
+import { useState } from "react";
+import { FadingCircle } from "better-react-spinkit";
+import useDarkMode from "../hooks/useDarkMode";
 
 export default function Facebook({ image }) {
   const router = useRouter();
+  const [colorTheme, setTheme] = useDarkMode();
+  const [loading, setLoading] = useState(false);
+
   const imgUrl =
     image?.urls?.raw ||
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format";
@@ -14,10 +20,14 @@ export default function Facebook({ image }) {
   };
 
   const downloadBanner = () => {
+    setLoading(true);
+
     const node = document.getElementById("banner");
 
     htmlToImage.toBlob(node).then((blob) => {
       FileSaver.saveAs(blob, "facebook-banner.png");
+
+      setLoading(false)
     });
   };
 
@@ -49,7 +59,13 @@ export default function Facebook({ image }) {
 
           <div className={styles.buttonContainer}>
             <button className={styles.downloadButton} onClick={downloadBanner}>
-              Download banner
+              {loading === true ? (
+                <center>
+                  <FadingCircle size={35} color="black" />
+                </center>
+              ) : (
+                "Download banner"
+              )}
             </button>
 
             <button className={styles.regenerateButton} onClick={regenerate}>
