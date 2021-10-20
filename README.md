@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Welcome to Social Banner 👋</h1>
+<p>
+  <a href="https://github.com/Prashoon123/social-banner/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/prashoonb" target="_blank">
+    <img alt="Twitter: prashoonb" src="https://img.shields.io/twitter/follow/prashoonb.svg?style=social" />
+  </a>
+</p>
 
-## Getting Started
+> Generate headers/covers/backgrounds for your social media accounts using this website!
 
-First, run the development server:
+### 🏠 [Homepage](https://www.social-banner.live/)
 
-```bash
-npm run dev
-# or
-yarn dev
+### ✨ [Demo](https://www.social-banner.live/)
+
+## Install
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🤝 Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/ChatCube/issues).
 
-## Learn More
+See [CONTRIBUTING.md](https://github.com/Prashoon123/social-banner/blob/main/CONTRIBUTING.md) for details about how to contribute
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧍 **Prashoon Bhattacharjee**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Website: https://prashoonb.tech
+- Twitter: [@prashoonb](https://twitter.com/prashoonb)
+- Github: [@Prashoon123](https://github.com/Prashoon123)
+- LinkedIn: [@prashoon-bhattacharjee](https://www.linkedin.com/in/prashoon-bhattacharjee/)
 
-## Deploy on Vercel
+## Show your support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Give a ⭐️ if this project helped you!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 License
+
+Copyright © 2021 [Prashoon Bhattacharjee](https://github.com/avneesh0612).<br />
+This project is [MIT](https://github.com/Prashoon123/social-banner/blob/main/LICENSE) licensed.
