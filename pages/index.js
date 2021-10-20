@@ -3,41 +3,46 @@ import styles from "../styles/Home.module.css";
 import useDarkMode from "../hooks/useDarkMode";
 import { LightBulbIcon, MoonIcon } from "@heroicons/react/outline";
 import { Follow } from "react-twitter-widgets";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <div className={styles.container}>
-      <Head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="robots" content="index,follow" />
-        <meta name="googlebot" content="index,follow" />
-        <meta
-          name="description"
-          content="Generate headers/cover/background for your social media accounts using this website!"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@prashoonb" />
-        <meta name="twitter:creator" content="@prashoonb" />
-        <meta property="og:title" content="Social Banner" />
-        <meta
-          property="og:description"
-          content="Generate headers/cover/background for your social media accounts using this website!"
-        />
-        <meta property="og:url" content="https://www.social-banner.live/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/social-media.png" />
-        <meta property="og:image:alt" content="Social Banner" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:site_name" content="Social Banner" />
-        <link rel="canonical" href="https://www.social-banner.live/" />
-        <link rel="icon" href="/internet.png" />
-        <title>Social Banner</title>
-      </Head>
+      <NextSeo
+        title="Social Banner"
+        description="Generate headers/cover/background for your social media accounts
+        using this website!"
+        canonical="https://www.social-banner.live/"
+        openGraph={{
+          type: "website",
+          url: "https://www.social-banner.live/",
+          title: "Social Banner",
+          description:
+            "Generate headers/cover/background for your social media accounts using this website!",
+          images: [
+            {
+              url: "/social-media.png",
+              width: 512,
+              height: 512,
+              alt: "Social Banner",
+            },
+          ],
+          site_name: "Social Banner",
+        }}
+        twitter={{
+          handle: "@prashoonb",
+          site: "@prashoonb",
+          cardType: "summary_large_image",
+        }}
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/internet.png",
+          },
+        ]}
+      />
 
       <header className={styles.header}>
         <div className={styles.toggler}>
