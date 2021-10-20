@@ -78,7 +78,11 @@ export default function Home() {
           </p>
         </div>
 
-        <a href="" target="_blank">
+        <a
+          href="https://github.com/Prashoon123/social-banner"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src="https://img.shields.io/github/stars/Prashoon123/social-banner?style=social"
             alt="githubStars"
