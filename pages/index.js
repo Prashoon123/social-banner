@@ -120,14 +120,14 @@ export default function Home() {
           </a>
         </p>
 
-        {/* {colorTheme === "dark" ? (
+        {colorTheme === "dark" ? (
           <a
-            href="https://www.producthunt.com/posts/password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447"
+            href="https://www.producthunt.com/posts/social-banner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-banner"
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316100&theme=light"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316742&theme=light"
               alt="Password Generator - Generate random passwords with just a few clicks | Product Hunt"
               style={{ width: 250, height: 54 }}
               width="250"
@@ -136,19 +136,19 @@ export default function Home() {
           </a>
         ) : (
           <a
-            href="https://www.producthunt.com/posts/password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-password-generator-2b28f945-00e7-4c7e-98f7-2bd2c23c5447"
+            href="https://www.producthunt.com/posts/social-banner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-banner"
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316100&theme=dark"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316742&theme=dark"
               alt="Password Generator - Generate random passwords with just a few clicks | Product Hunt"
               style={{ width: 250, height: 54 }}
               width="250"
               height="54"
             />
           </a>
-        )} */}
+        )}
       </footer>
     </div>
   );
