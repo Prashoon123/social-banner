@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to Social Banner 👋</h1>
-<p>
+<p align="center">
   <a href="https://github.com/Prashoon123/social-banner/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
