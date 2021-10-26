@@ -32,7 +32,7 @@ npm run dev
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/ChatCube/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Prashoon123/social-banner/issues).
 
 See [CONTRIBUTING.md](https://github.com/Prashoon123/social-banner/blob/main/CONTRIBUTING.md) for details about how to contribute
 
@@ -51,5 +51,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2021 [Prashoon Bhattacharjee](https://github.com/avneesh0612).<br />
+Copyright © 2021 [Prashoon Bhattacharjee](https://github.com/Prashoon123).<br />
 This project is [MIT](https://github.com/Prashoon123/social-banner/blob/main/LICENSE) licensed.
