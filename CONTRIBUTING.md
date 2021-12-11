@@ -10,7 +10,7 @@ git clone url_redirected_to
 
 ### Installing dependencies
 
-If you use yarn then run
+If you use npm then run
 
 ```bash
 npm install
